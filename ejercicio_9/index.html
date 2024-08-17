@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre Completo con Propiedad Computada</title>
+    <!-- Estilos CSS incluidos directamente en el HTML -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .nombre-completo {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #007bff;
+        }
+    </style>
+    <!-- Incluyendo Vue.js desde el CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Campo de texto para ingresar el nombre -->
+        <input type="text" v-model="nombre" placeholder="Ingresa tu nombre" />
+        <!-- Campo de texto para ingresar el apellido -->
+        <input type="text" v-model="apellido" placeholder="Ingresa tu apellido" />
+        <!-- Mostrar el nombre completo utilizando la propiedad computada -->
+        <p class="nombre-completo">Nombre Completo: {{ nombreCompleto }}</p>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="ejercicio9.js"></script>
+</body>
+</html>

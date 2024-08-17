@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchers en Vue.js</title>
+    <!-- Estilos CSS incluidos directamente en el HTML -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .mensaje {
+            font-size: 20px;
+            margin-top: 20px;
+            color: #28a745;
+        }
+    </style>
+    <!-- Incluyendo Vue.js desde el CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Campo de texto para ingresar un valor -->
+        <input type="text" v-model="valor" placeholder="Ingresa un valor" />
+        <!-- Mostrar un mensaje cuando el valor cambie -->
+        <p class="mensaje">{{ mensaje }}</p>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="ejercicio10.js"></script>
+</body>
+</html>
